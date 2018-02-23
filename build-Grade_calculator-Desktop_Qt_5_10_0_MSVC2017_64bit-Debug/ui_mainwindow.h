@@ -17,9 +17,11 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QToolBar>
@@ -78,6 +80,10 @@ public:
     QComboBox *Schema_Box;
     QFrame *line_12;
     QLabel *Final_2;
+    QLabel *Homework_3;
+    QFrame *line_13;
+    QPushButton *pushButton;
+    QLineEdit *Score_display;
     QMenuBar *menuBar;
     QMenu *menuGrade_Calculator;
     QToolBar *mainToolBar;
@@ -88,6 +94,9 @@ public:
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->setEnabled(true);
         MainWindow->resize(1289, 1307);
+        QFont font;
+        font.setUnderline(false);
+        MainWindow->setFont(font);
         MainWindow->setAutoFillBackground(true);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
@@ -100,14 +109,14 @@ public:
         Hw1_spin = new QSpinBox(centralWidget);
         Hw1_spin->setObjectName(QStringLiteral("Hw1_spin"));
         Hw1_spin->setGeometry(QRect(470, 160, 81, 61));
-        QFont font;
-        font.setPointSize(12);
-        Hw1_spin->setFont(font);
+        QFont font1;
+        font1.setPointSize(12);
+        Hw1_spin->setFont(font1);
         Hw1_spin->setMaximum(100);
         Hw2_spin = new QSpinBox(centralWidget);
         Hw2_spin->setObjectName(QStringLiteral("Hw2_spin"));
         Hw2_spin->setGeometry(QRect(470, 300, 81, 61));
-        Hw2_spin->setFont(font);
+        Hw2_spin->setFont(font1);
         Hw2_spin->setMaximum(100);
         Hw2_slider = new QSlider(centralWidget);
         Hw2_slider->setObjectName(QStringLiteral("Hw2_slider"));
@@ -122,12 +131,12 @@ public:
         Hw3_spin = new QSpinBox(centralWidget);
         Hw3_spin->setObjectName(QStringLiteral("Hw3_spin"));
         Hw3_spin->setGeometry(QRect(470, 440, 81, 61));
-        Hw3_spin->setFont(font);
+        Hw3_spin->setFont(font1);
         Hw3_spin->setMaximum(100);
         Hw4_spin = new QSpinBox(centralWidget);
         Hw4_spin->setObjectName(QStringLiteral("Hw4_spin"));
         Hw4_spin->setGeometry(QRect(470, 580, 81, 61));
-        Hw4_spin->setFont(font);
+        Hw4_spin->setFont(font1);
         Hw4_spin->setMaximum(100);
         Hw4_slider = new QSlider(centralWidget);
         Hw4_slider->setObjectName(QStringLiteral("Hw4_slider"));
@@ -137,7 +146,7 @@ public:
         Hw5_spin = new QSpinBox(centralWidget);
         Hw5_spin->setObjectName(QStringLiteral("Hw5_spin"));
         Hw5_spin->setGeometry(QRect(470, 720, 81, 61));
-        Hw5_spin->setFont(font);
+        Hw5_spin->setFont(font1);
         Hw5_spin->setMaximum(100);
         Hw5_slider = new QSlider(centralWidget);
         Hw5_slider->setObjectName(QStringLiteral("Hw5_slider"));
@@ -152,12 +161,12 @@ public:
         Hw6_spin = new QSpinBox(centralWidget);
         Hw6_spin->setObjectName(QStringLiteral("Hw6_spin"));
         Hw6_spin->setGeometry(QRect(470, 860, 81, 61));
-        Hw6_spin->setFont(font);
+        Hw6_spin->setFont(font1);
         Hw6_spin->setMaximum(100);
         Hw7_spin = new QSpinBox(centralWidget);
         Hw7_spin->setObjectName(QStringLiteral("Hw7_spin"));
         Hw7_spin->setGeometry(QRect(470, 1000, 81, 61));
-        Hw7_spin->setFont(font);
+        Hw7_spin->setFont(font1);
         Hw7_spin->setMaximum(100);
         Hw7_slider = new QSlider(centralWidget);
         Hw7_slider->setObjectName(QStringLiteral("Hw7_slider"));
@@ -172,44 +181,44 @@ public:
         Hw8_spin = new QSpinBox(centralWidget);
         Hw8_spin->setObjectName(QStringLiteral("Hw8_spin"));
         Hw8_spin->setGeometry(QRect(470, 1140, 81, 61));
-        Hw8_spin->setFont(font);
+        Hw8_spin->setFont(font1);
         Hw8_spin->setMaximum(100);
         Homework_1 = new QLabel(centralWidget);
         Homework_1->setObjectName(QStringLiteral("Homework_1"));
         Homework_1->setGeometry(QRect(70, 130, 351, 31));
-        QFont font1;
-        font1.setPointSize(12);
-        font1.setBold(true);
-        font1.setWeight(75);
-        Homework_1->setFont(font1);
+        QFont font2;
+        font2.setPointSize(12);
+        font2.setBold(true);
+        font2.setWeight(75);
+        Homework_1->setFont(font2);
         Homework_2 = new QLabel(centralWidget);
         Homework_2->setObjectName(QStringLiteral("Homework_2"));
         Homework_2->setGeometry(QRect(70, 270, 351, 31));
-        Homework_2->setFont(font1);
+        Homework_2->setFont(font2);
         Homewor_3 = new QLabel(centralWidget);
         Homewor_3->setObjectName(QStringLiteral("Homewor_3"));
         Homewor_3->setGeometry(QRect(70, 410, 351, 31));
-        Homewor_3->setFont(font1);
+        Homewor_3->setFont(font2);
         Homework_4 = new QLabel(centralWidget);
         Homework_4->setObjectName(QStringLiteral("Homework_4"));
         Homework_4->setGeometry(QRect(70, 550, 351, 31));
-        Homework_4->setFont(font1);
+        Homework_4->setFont(font2);
         Homework_5 = new QLabel(centralWidget);
         Homework_5->setObjectName(QStringLiteral("Homework_5"));
         Homework_5->setGeometry(QRect(70, 690, 351, 31));
-        Homework_5->setFont(font1);
+        Homework_5->setFont(font2);
         Homework_6 = new QLabel(centralWidget);
         Homework_6->setObjectName(QStringLiteral("Homework_6"));
         Homework_6->setGeometry(QRect(70, 830, 351, 31));
-        Homework_6->setFont(font1);
+        Homework_6->setFont(font2);
         Homework_7 = new QLabel(centralWidget);
         Homework_7->setObjectName(QStringLiteral("Homework_7"));
         Homework_7->setGeometry(QRect(70, 970, 351, 31));
-        Homework_7->setFont(font1);
+        Homework_7->setFont(font2);
         Homework_8 = new QLabel(centralWidget);
         Homework_8->setObjectName(QStringLiteral("Homework_8"));
         Homework_8->setGeometry(QRect(70, 1110, 351, 31));
-        Homework_8->setFont(font1);
+        Homework_8->setFont(font2);
         line = new QFrame(centralWidget);
         line->setObjectName(QStringLiteral("line"));
         line->setGeometry(QRect(20, 240, 571, 20));
@@ -248,11 +257,11 @@ public:
         Midterm_1 = new QLabel(centralWidget);
         Midterm_1->setObjectName(QStringLiteral("Midterm_1"));
         Midterm_1->setGeometry(QRect(740, 130, 351, 31));
-        Midterm_1->setFont(font1);
+        Midterm_1->setFont(font2);
         Mt1_spin = new QSpinBox(centralWidget);
         Mt1_spin->setObjectName(QStringLiteral("Mt1_spin"));
         Mt1_spin->setGeometry(QRect(1140, 160, 81, 61));
-        Mt1_spin->setFont(font);
+        Mt1_spin->setFont(font1);
         Mt1_spin->setMaximum(100);
         Mt1_slider = new QSlider(centralWidget);
         Mt1_slider->setObjectName(QStringLiteral("Mt1_slider"));
@@ -272,7 +281,7 @@ public:
         Mt2_spin = new QSpinBox(centralWidget);
         Mt2_spin->setObjectName(QStringLiteral("Mt2_spin"));
         Mt2_spin->setGeometry(QRect(1140, 300, 81, 61));
-        Mt2_spin->setFont(font);
+        Mt2_spin->setFont(font1);
         Mt2_spin->setMaximum(100);
         line_10 = new QFrame(centralWidget);
         line_10->setObjectName(QStringLiteral("line_10"));
@@ -287,16 +296,16 @@ public:
         Midterm_2 = new QLabel(centralWidget);
         Midterm_2->setObjectName(QStringLiteral("Midterm_2"));
         Midterm_2->setGeometry(QRect(740, 270, 351, 31));
-        Midterm_2->setFont(font1);
+        Midterm_2->setFont(font2);
         Final_spin = new QSpinBox(centralWidget);
         Final_spin->setObjectName(QStringLiteral("Final_spin"));
         Final_spin->setGeometry(QRect(1140, 440, 81, 61));
-        Final_spin->setFont(font);
+        Final_spin->setFont(font1);
         Final_spin->setMaximum(100);
         Final = new QLabel(centralWidget);
         Final->setObjectName(QStringLiteral("Final"));
         Final->setGeometry(QRect(740, 410, 351, 31));
-        Final->setFont(font1);
+        Final->setFont(font2);
         line_11 = new QFrame(centralWidget);
         line_11->setObjectName(QStringLiteral("line_11"));
         line_11->setGeometry(QRect(690, 520, 571, 20));
@@ -312,7 +321,7 @@ public:
         Schema_Box->addItem(QString());
         Schema_Box->setObjectName(QStringLiteral("Schema_Box"));
         Schema_Box->setGeometry(QRect(740, 580, 481, 31));
-        Schema_Box->setFont(font1);
+        Schema_Box->setFont(font2);
         line_12 = new QFrame(centralWidget);
         line_12->setObjectName(QStringLiteral("line_12"));
         line_12->setGeometry(QRect(690, 660, 571, 20));
@@ -320,8 +329,29 @@ public:
         line_12->setFrameShadow(QFrame::Sunken);
         Final_2 = new QLabel(centralWidget);
         Final_2->setObjectName(QStringLiteral("Final_2"));
-        Final_2->setGeometry(QRect(740, 690, 351, 31));
-        Final_2->setFont(font1);
+        Final_2->setGeometry(QRect(740, 830, 221, 31));
+        Final_2->setFont(font2);
+        Homework_3 = new QLabel(centralWidget);
+        Homework_3->setObjectName(QStringLiteral("Homework_3"));
+        Homework_3->setGeometry(QRect(70, 0, 541, 71));
+        QFont font3;
+        font3.setPointSize(16);
+        font3.setBold(true);
+        font3.setItalic(true);
+        font3.setWeight(75);
+        Homework_3->setFont(font3);
+        line_13 = new QFrame(centralWidget);
+        line_13->setObjectName(QStringLiteral("line_13"));
+        line_13->setGeometry(QRect(20, 70, 571, 20));
+        line_13->setFrameShape(QFrame::HLine);
+        line_13->setFrameShadow(QFrame::Sunken);
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(740, 700, 481, 71));
+        pushButton->setFont(font1);
+        Score_display = new QLineEdit(centralWidget);
+        Score_display->setObjectName(QStringLiteral("Score_display"));
+        Score_display->setGeometry(QRect(1040, 860, 91, 61));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -376,10 +406,12 @@ public:
         Midterm_1->setText(QApplication::translate("MainWindow", "Midterm 1", nullptr));
         Midterm_2->setText(QApplication::translate("MainWindow", "Midterm 2", nullptr));
         Final->setText(QApplication::translate("MainWindow", "Final", nullptr));
-        Schema_Box->setItemText(0, QApplication::translate("MainWindow", "Schema A", nullptr));
-        Schema_Box->setItemText(1, QApplication::translate("MainWindow", "Schema B", nullptr));
+        Schema_Box->setItemText(0, QApplication::translate("MainWindow", "Scheme A", nullptr));
+        Schema_Box->setItemText(1, QApplication::translate("MainWindow", "Scheme B", nullptr));
 
         Final_2->setText(QApplication::translate("MainWindow", "Overall Score:", nullptr));
+        Homework_3->setText(QApplication::translate("MainWindow", "Pic10B Grade Calculator", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "Calculate Grade", nullptr));
         menuGrade_Calculator->setTitle(QApplication::translate("MainWindow", "Grade Calculator", nullptr));
     } // retranslateUi
 

@@ -13,6 +13,11 @@
     <height>1307</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <underline>false</underline>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
@@ -778,12 +783,12 @@
     </property>
     <item>
      <property name="text">
-      <string>Schema A</string>
+      <string>Scheme A</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>Schema B</string>
+      <string>Scheme B</string>
      </property>
     </item>
    </widget>
@@ -804,8 +809,8 @@
     <property name="geometry">
      <rect>
       <x>740</x>
-      <y>710</y>
-      <width>351</width>
+      <y>830</y>
+      <width>221</width>
       <height>31</height>
      </rect>
     </property>
@@ -818,6 +823,68 @@
     </property>
     <property name="text">
      <string>Overall Score:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Homework_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>0</y>
+      <width>541</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <italic>true</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Pic10B Grade Calculator</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_13">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>571</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>740</x>
+      <y>700</y>
+      <width>481</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Calculate Grade</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Score_display">
+    <property name="geometry">
+     <rect>
+      <x>1040</x>
+      <y>860</y>
+      <width>91</width>
+      <height>61</height>
+     </rect>
     </property>
    </widget>
   </widget>
