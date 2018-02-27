@@ -20,9 +20,12 @@ private slots:
 
     void on_Schema_Box_currentIndexChanged(const QString &arg1);
 
+    void on_Schema_Box_2_currentIndexChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
     bool scheme_A = true;
+    bool pic10b = true;
 };
 
 #endif // MAINWINDOW_H
