@@ -6,6 +6,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->Final_Project->hide();
+    ui->Final_Project_slider->hide();
+    ui->Final_Project_spin->hide();
 }
 
 MainWindow::~MainWindow()
@@ -101,9 +104,60 @@ void MainWindow::on_Schema_Box_currentIndexChanged(const QString &arg1)
 
 void MainWindow::on_Schema_Box_2_currentIndexChanged(const QString &arg1)
 {
-    if(arg1 == "Pic 10B Grade Calculator")
+    if(arg1 == "Pic 10B Grade Calculator"){
         pic10b = true;
+        ui->Homework_4->show();
+        ui->Homework_5->show();
+        ui->Homework_6->show();
+        ui->Homework_7->show();
+        ui->Homework_8->show();
+        ui->Midterm_2->show();
 
-    if(arg1 == "Pic 10C Grade Calculator")
+        ui->Hw4_slider->show();
+        ui->Hw5_slider->show();
+        ui->Hw6_slider->show();
+        ui->Hw7_slider->show();
+        ui->Hw8_slider->show();
+        ui->Mt2_slider->show();
+
+        ui->Hw4_spin->show();
+        ui->Hw5_spin->show();
+        ui->Hw6_spin->show();
+        ui->Hw7_spin->show();
+        ui->Hw8_spin->show();
+        ui->Mt2_spin->show();
+
+        ui->Final_Project->hide();
+        ui->Final_Project_slider->hide();
+        ui->Final_Project_spin->hide();
+    }
+
+    if(arg1 == "Pic 10C Grade Calculator"){
         pic10b = false;
+        ui->Homework_4->hide();
+        ui->Homework_5->hide();
+        ui->Homework_6->hide();
+        ui->Homework_7->hide();
+        ui->Homework_8->hide();
+        ui->Midterm_2->hide();
+
+        ui->Hw4_slider->hide();
+        ui->Hw5_slider->hide();
+        ui->Hw6_slider->hide();
+        ui->Hw7_slider->hide();
+        ui->Hw8_slider->hide();
+        ui->Mt2_slider->hide();
+
+        ui->Hw4_spin->hide();
+        ui->Hw5_spin->hide();
+        ui->Hw6_spin->hide();
+        ui->Hw7_spin->hide();
+        ui->Hw8_spin->hide();
+        ui->Mt2_spin->hide();
+
+        ui->Final_Project->show();
+        ui->Final_Project_slider->show();
+        ui->Final_Project_spin->show();
+    }
+
 }
